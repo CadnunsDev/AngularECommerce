@@ -5,14 +5,12 @@ using CadnunsDev.AngularECommerce.Application.ViewModels;
 
 namespace CadnunsDev.AngularECommerce.Application.Interfaces
 {
-    public interface IProdutoAppService
+    public interface IProdutoAppService : IDisposable
     {
         ProdutoViewModel Adicionar(ProdutoViewModel entity);
         ProdutoViewModel ObterPorId(Guid id);
         IEnumerable<ProdutoViewModel> ObterTodos();
         ProdutoViewModel Atualizar(ProdutoViewModel entity);
         void Remover(Guid id);
-        IEnumerable<ProdutoViewModel> Buscar(Expression<Func<ProdutoViewModel, bool>> predicate);
-        int SaveChanges();
     }
 }

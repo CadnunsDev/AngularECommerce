@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using CadnunsDev.AngularECommerce.Domain.Entities;
+using CadnunsDev.AngularECommerce.Infra.Data.ORM.Mapping;
 
 namespace CadnunsDev.AngularECommerce.Infra.Data.ORM.Context
 {
@@ -14,6 +15,11 @@ namespace CadnunsDev.AngularECommerce.Infra.Data.ORM.Context
         {
         }
 
-        public DbSet<Produto> Produtos { get; set; } 
+        public DbSet<Produto> Produtos { get; set; }
+
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            modelBuilder.Configurations.Add(new ProdutoMapping());
+        }
     }
 }

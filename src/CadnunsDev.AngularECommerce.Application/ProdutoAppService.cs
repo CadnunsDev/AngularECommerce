@@ -40,22 +40,22 @@ namespace CadnunsDev.AngularECommerce.Application
 
         public ProdutoViewModel Atualizar(ProdutoViewModel entity)
         {
-            throw new NotImplementedException();
+            var produto = Mapper.Map<Produto>(entity);
+            produto = _produtoRepository.Adicionar(produto);
+            entity = Mapper.Map<ProdutoViewModel>(produto);
+            return entity;
         }
 
         public void Remover(Guid id)
         {
-            throw new NotImplementedException();
+            _produtoRepository.Remover(id);
         }
+        
 
-        public IEnumerable<ProdutoViewModel> Buscar(Expression<Func<ProdutoViewModel, bool>> predicate)
+        public void Dispose()
         {
-            throw new NotImplementedException();
-        }
-
-        public int SaveChanges()
-        {
-            throw new NotImplementedException();
+            _produtoRepository.Dispose();
+            GC.SuppressFinalize(this);
         }
     }
 }

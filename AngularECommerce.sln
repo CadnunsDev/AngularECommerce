@@ -35,6 +35,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CadnunsDev.AngularECommerce
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CadnunsDev.AngularECommerce.Application", "src\CadnunsDev.AngularECommerce.Application\CadnunsDev.AngularECommerce.Application.csproj", "{5E68DD88-C6D9-47D4-8180-35FF49911AC9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CadnunsDev.AngularECommerce.UI.Admin", "src\CadnunsDev.AngularECommerce.UI.Admin\CadnunsDev.AngularECommerce.UI.Admin.csproj", "{B4A5461B-92F4-45E9-9E4B-608AE8B532BA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -61,6 +63,10 @@ Global
 		{5E68DD88-C6D9-47D4-8180-35FF49911AC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5E68DD88-C6D9-47D4-8180-35FF49911AC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5E68DD88-C6D9-47D4-8180-35FF49911AC9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4A5461B-92F4-45E9-9E4B-608AE8B532BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4A5461B-92F4-45E9-9E4B-608AE8B532BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4A5461B-92F4-45E9-9E4B-608AE8B532BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4A5461B-92F4-45E9-9E4B-608AE8B532BA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -73,5 +79,6 @@ Global
 		{371AAD2F-61D2-4693-A0F9-35EA3C0ACEDA} = {42820428-21E7-4235-B1E9-F684FA247A78}
 		{7EE927E6-96E1-484A-BAEE-EA2B02E30FBB} = {2217BA86-4B73-4DB6-8BB4-995F2D77765D}
 		{5E68DD88-C6D9-47D4-8180-35FF49911AC9} = {FC8BDD5D-24D7-48D2-8769-9BE23070E0C2}
+		{B4A5461B-92F4-45E9-9E4B-608AE8B532BA} = {19632DC1-41B4-42AC-A7B9-F72FF4F36D06}
 	EndGlobalSection
 EndGlobal
